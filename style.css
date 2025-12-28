@@ -1,0 +1,42 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+.font-mono { 
+    font-family: 'JetBrains Mono', monospace; 
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { 
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track { 
+    background: #051a0d; 
+}
+
+::-webkit-scrollbar-thumb { 
+    background: #10b981; 
+    border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover { 
+    background: #34d399; 
+}
+
+/* Ticker Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.ticker-content {
+    animation: scroll 40s linear infinite;
+}
+
+/* Background Texture */
+.bg-texture {
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+}
